@@ -1,4 +1,4 @@
-# DBETA
+# DBETA Agency
 
 Building machine-legible digital systems for scalable, structured, and AI-ready businesses.
 
