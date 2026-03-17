@@ -47,6 +47,9 @@ The DBETA system is composed of:
 - Public Roadmap  
   https://github.com/dbetalimited/dbeta-public-roadmap  
 
+- Aidi Layer Starter Kit  
+  https://github.com/dbetalimited/dbeta-starter-kit
+
 ---
 
 ## Live System
