@@ -113,6 +113,7 @@ The DBETA system is built from four core layers:
   "related": ["structural-strategy"],
   "url": "https://www.dbeta.co.uk/machine-legibility-aidi-layer.html"
 }
+```  
 
 ## Live System
 
