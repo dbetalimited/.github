@@ -87,7 +87,7 @@ It provides:
 
 It bridges the gap between architectural thinking and real-world implementation.
 
-→ https://github.com/dbetalimited/dbeta-bones
+→ https://github.com/donatastranauskis/dbeta-bones
 
 ---
 
