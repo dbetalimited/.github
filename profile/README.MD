@@ -11,6 +11,7 @@ DBETA is a digital architecture approach focused on transforming websites into s
 Instead of building isolated pages, we design interconnected, machine-readable environments that support scalability, consistency, and AI-driven discovery.
 
 ![System](https://img.shields.io/badge/System-DBETA-blue)
+![Framework](https://img.shields.io/badge/Bones-Core-purple)
 ![Focus](https://img.shields.io/badge/Focus-AI%20Ready-green)
 ![Layer](https://img.shields.io/badge/AIDI-Active-orange)
 
@@ -20,14 +21,36 @@ Instead of building isolated pages, we design interconnected, machine-readable e
 
 The DBETA system is composed of:
 
-- AIDI Layer → machine-legible structured outputs  
-- Entity Models → consistent data structures  
-- Validation Systems → output integrity and quality control  
-- Digital Architecture → system-level design principles  
+- **DBETA Bones** → logic-first framework and engineering core  
+- **AIDI Layer** → machine-legible structured outputs  
+- **Entity Models** → consistent data structures  
+- **Validation Systems** → output integrity and quality control  
+- **Digital Architecture** → system-level design principles  
+
+---
+
+## DBETA Bones
+
+DBETA Bones is the framework layer that powers the system.
+
+It provides:
+
+- logic-first architecture  
+- structured entity relationships  
+- low-bloat engineering approach  
+- governed output generation  
+- foundation for machine-legibility  
+
+It bridges the gap between architectural thinking and real-world implementation.
+
+→ https://github.com/dbetalimited/dbeta-bones
 
 ---
 
 ## Explore the Ecosystem
+
+- DBETA Bones (Framework)  
+  https://github.com/dbetalimited/dbeta-bones  
 
 - DBETA Labs  
   https://github.com/dbetalimited/dbeta-labs  
@@ -64,14 +87,20 @@ They are systems that must be:
 - structured  
 - machine-readable  
 - scalable  
+- governed  
 - verifiable  
 
 DBETA is built to support this shift.
 
-## Learn More
+---
 
-- Machine Legibility Layer  
-  https://www.dbeta.co.uk/machine-legibility-aidi-layer.html
+## Learn More
 
 - Digital Architecture Approach  
   https://www.dbeta.co.uk/structural-strategy.html
+
+- Framework Implementation 
+  https://www.dbeta.co.uk/digital-platform-engineering.html
+
+- Machine Legibility Layer  
+  https://www.dbeta.co.uk/machine-legibility-aidi-layer.html
