@@ -17,6 +17,50 @@ Instead of building isolated pages, we design interconnected, machine-readable e
 
 ---
 
+## How It Works
+
+    ┌──────────────────────────┐
+    │     Digital Interface     │
+    │  (Website / Platform UI) │
+    └────────────┬─────────────┘
+                 │
+    ┌────────────▼─────────────┐
+    │        AIDI Layer         │
+    │  Structured Output Layer  │
+    └────────────┬─────────────┘
+                 │
+    ┌────────────▼─────────────┐
+    │       Entity Models       │
+    │  Services / Content / UX  │
+    └────────────┬─────────────┘
+                 │
+    ┌────────────▼─────────────┐
+    │   Validation Systems      │
+    │ Rules / Consistency / QA  │
+    └────────────┬─────────────┘
+                 │
+    ┌────────────▼─────────────┐
+    │    Digital Architecture   │
+    │ System Design & Structure │
+    └──────────────────────────┘
+
+---
+
+## What This Enables
+
+DBETA transforms websites into structured systems that can be understood by both users and machines.
+
+This enables:
+
+- AI systems to interpret services and content directly  
+- consistent data across pages, platforms, and integrations  
+- scalable digital infrastructure without fragmentation  
+- long-term maintainability and governance  
+
+Instead of relying on fragmented SEO signals, DBETA provides structured outputs that can be consumed directly.
+
+---
+
 ## Core System
 
 The DBETA system is composed of:
@@ -47,6 +91,25 @@ It bridges the gap between architectural thinking and real-world implementation.
 
 ---
 
+## Core Components
+
+The DBETA system is built from four core layers:
+
+- **AIDI Layer**  
+  Structured outputs that expose services, content, and relationships in machine-readable formats  
+
+- **Entity Models**  
+  Standardised definitions for services, articles, and digital entities  
+
+- **Validation Systems**  
+  Rules and checks to ensure consistency, completeness, and integrity  
+
+- **Digital Architecture**  
+  System-level structure connecting all components into a scalable framework  
+
+---
+
+
 ## Explore the Ecosystem
 
 - DBETA Bones (Framework)  
@@ -71,6 +134,19 @@ It bridges the gap between architectural thinking and real-world implementation.
   https://github.com/dbetalimited/dbeta-public-roadmap  
 
 ---
+
+## Example Structured Output
+
+```json
+{
+  "type": "service",
+  "id": "machine-legibility-aidi-layer",
+  "name": "Machine Legibility (AIDI Layer)",
+  "category": "ai-ready-infrastructure",
+  "related": ["structural-strategy"],
+  "url": "https://www.dbeta.co.uk/machine-legibility-aidi-layer.html"
+}
+```  
 
 ## Live System
 
@@ -104,3 +180,8 @@ DBETA is built to support this shift.
 
 - Machine Legibility Layer  
   https://www.dbeta.co.uk/machine-legibility-aidi-layer.html
+
+Work With Us
+We implement DBETA systems for businesses looking to build long-term digital infrastructure.
+
+https://www.dbeta.co.uk/
