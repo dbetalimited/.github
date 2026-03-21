@@ -113,7 +113,7 @@ The DBETA system is built from four core layers:
 ## Explore the Ecosystem
 
 - DBETA Bones (Framework)  
-  https://github.com/dbetalimited/dbeta-bones  
+  https://github.com/donatastranauskis/dbeta-bones
 
 - DBETA Labs  
   https://github.com/dbetalimited/dbeta-labs  
@@ -175,7 +175,7 @@ DBETA is built to support this shift.
 - Digital Architecture Approach  
   https://www.dbeta.co.uk/structural-strategy.html
 
-- Framework Implementation 
+- Framework Implementation
   https://www.dbeta.co.uk/digital-platform-engineering.html
 
 - Machine Legibility Layer  
