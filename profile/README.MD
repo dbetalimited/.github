@@ -25,6 +25,43 @@ The same governed records can then power:
 
 Bones is designed to keep these outputs connected to one controlled source of truth.
 
+## Who Bones Is For
+
+Bones is intended for organisations whose websites and digital services depend on structured, interconnected business information.
+
+Typical users include:
+
+- **Content and operations teams** managing records through the Admin interface
+- **Digital teams** defining business entities, fields, relationships and publishing workflows
+- **Developers and implementation partners** building modules, integrations and presentation layers
+- **Governance and compliance teams** reviewing permissions, changes, publishing decisions and audit evidence
+- **Organisations preparing for AI-driven discovery** that need reliable, traceable machine-readable information
+
+Bones is particularly suited to organisations managing interconnected information such as services, projects, cases, people, locations, assets or publications across one or more digital channels.
+
+It is not primarily a page builder or a conventional website CMS. It is a governed data and publishing platform for organisations that need their business information to remain structured, reusable and verifiable.
+
+## Problems Bones Solves
+
+Many digital platforms begin as collections of pages and gradually accumulate separate content types, databases, integrations and structured-data scripts.
+
+This creates recurring problems:
+
+- **Rigid data models** — every new business object or relationship requires custom development
+- **Duplicated information** — the same facts are maintained separately across pages, systems and integrations
+- **Disconnected outputs** — websites, APIs and structured data can present conflicting information
+- **Uncontrolled publishing** — stored changes may become public without clear review, approval or revision boundaries
+- **Weak traceability** — organisations cannot reliably determine who changed, approved or published information
+- **Semantic drift** — machine-readable output becomes outdated or diverges from the underlying records
+- **Presentation lock-in** — important business information becomes trapped inside templates or page-builder structures
+- **Unsafe extension** — plugins and integrations can bypass permissions, validation or data ownership rules
+- **Poor portability** — organisations struggle to export complete records and relationships in a usable form
+- **Scaling through duplication** — new sites, services and channels create additional disconnected systems
+
+Bones addresses these problems by placing governed entity definitions and records at the centre of the platform.
+
+Web pages, administration interfaces, APIs, exports and AIDI outputs are produced from the same controlled source. Publishing, authorisation, provenance, validation and audit rules remain attached to the underlying information rather than being recreated separately for every output.
+
 ## The Product Model
 
 ```text
