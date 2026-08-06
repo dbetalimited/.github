@@ -1,187 +1,235 @@
-# DBETA
+# DBETA Bones
 
-Building machine-legible digital systems for scalable, structured, and AI-ready businesses.
+A governed, logic-first platform for building structured, scalable and machine-legible digital systems.
 
----
+![Platform](https://img.shields.io/badge/Platform-Bones%209-purple)
+![Architecture](https://img.shields.io/badge/Architecture-Modular%20Monolith-blue)
+![Framework](https://img.shields.io/badge/Framework-Laravel-red)
+![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 
 ## Overview
 
-DBETA is a digital architecture approach focused on transforming websites into structured systems.
+DBETA Bones is a Laravel-based platform for creating governed digital systems around structured business data.
 
-Instead of building isolated pages, we design interconnected, machine-readable environments that support scalability, consistency, and AI-driven discovery.
+Its central capability is a user-definable data model. Administrators can create their own entity types—such as Projects, Cases, Services, Assets or People—then add fields, relationships and validation rules without requiring a developer to create a new database-backed feature for every business object.
 
-![System](https://img.shields.io/badge/System-DBETA-blue)
-![Framework](https://img.shields.io/badge/Bones-Core-purple)
-![Focus](https://img.shields.io/badge/Focus-AI%20Ready-green)
-![Layer](https://img.shields.io/badge/AIDI-Active-orange)
+The same governed records can then power:
 
----
+- administration interfaces
+- publishing workflows
+- public websites
+- APIs and integrations
+- structured JSON-LD
+- audit and compliance evidence
+- data export
 
-## How It Works
+Bones is designed to keep these outputs connected to one controlled source of truth.
 
-    ┌──────────────────────────┐
-    │     Digital Interface     │
-    │  (Website / Platform UI) │
-    └────────────┬─────────────┘
-                 │
-    ┌────────────▼─────────────┐
-    │        AIDI Layer         │
-    │  Structured Output Layer  │
-    └────────────┬─────────────┘
-                 │
-    ┌────────────▼─────────────┐
-    │       Entity Models       │
-    │  Services / Content / UX  │
-    └────────────┬─────────────┘
-                 │
-    ┌────────────▼─────────────┐
-    │   Validation Systems      │
-    │ Rules / Consistency / QA  │
-    └────────────┬─────────────┘
-                 │
-    ┌────────────▼─────────────┐
-    │    Digital Architecture   │
-    │ System Design & Structure │
-    └──────────────────────────┘
+## The Product Model
 
----
+```text
+┌──────────────────────────────────────┐
+│              Admin UX                │
+│ Define entities, fields and rules    │
+└──────────────────┬───────────────────┘
+                   │
+┌──────────────────▼───────────────────┐
+│       User-Defined Data Model        │
+│ Types, fields and relationships      │
+└──────────────────┬───────────────────┘
+                   │
+┌──────────────────▼───────────────────┐
+│          Governed Records            │
+│ Validation, revisions and history    │
+└──────────────────┬───────────────────┘
+                   │
+┌──────────────────▼───────────────────┐
+│       Publishing and Workflow        │
+│ Draft, review, approval and release  │
+└──────────────────┬───────────────────┘
+                   │
+       ┌───────────┼───────────┬─────────────┐
+       │           │           │             │
+       ▼           ▼           ▼             ▼
+ Public UI     AIDI/JSON-LD   APIs and     Audit and
+ and themes    and provenance export       compliance
+```
 
-## What This Enables
+## Core Capabilities
 
-DBETA transforms websites into structured systems that can be understood by both users and machines.
+### User-Defined Entity Types
 
-This enables:
+Administrators can define the kinds of information their organisation manages.
 
-- AI systems to interpret services and content directly  
-- consistent data across pages, platforms, and integrations  
-- scalable digital infrastructure without fragmentation  
-- long-term maintainability and governance  
+Each entity type can have:
 
-Instead of relying on fragmented SEO signals, DBETA provides structured outputs that can be consumed directly.
+- custom fields
+- validation rules
+- relationships to other entity types
+- lifecycle rules
+- publishing behaviour
+- presentation settings
+- machine-legibility mappings
 
----
+This allows Bones to support different organisations and sectors without reducing everything to predefined pages or content types.
 
-## Core System
+### Governed Records
 
-The DBETA system is composed of:
+Bones manages records created from those definitions.
 
-- **DBETA Bones** → logic-first framework and engineering core  
-- **AIDI Layer** → machine-legible structured outputs  
-- **Entity Models** → consistent data structures  
-- **Validation Systems** → output integrity and quality control  
-- **Digital Architecture** → system-level design principles  
+The platform architecture covers:
 
----
+- generated administration forms
+- validation
+- revision history
+- concurrent editing protection
+- authorisation
+- destructive-change safeguards
+- stable identifiers
+- complete audit trails
 
-## DBETA Bones
+### Publishing and Presentation
 
-DBETA Bones is the framework layer that powers the system.
+Creating a record does not automatically make it public.
 
-It provides:
+Bones separates stored data from approved public output through governed publishing workflows. Published records can be delivered through site-specific URLs, templates and themes while remaining connected to their source records.
 
-- logic-first architecture  
-- structured entity relationships  
-- low-bloat engineering approach  
-- governed output generation  
-- foundation for machine-legibility  
+### AIDI and Machine Legibility
 
-It bridges the gap between architectural thinking and real-world implementation.
+AIDI—AI Discovery Infrastructure—is a core Bones subsystem.
 
-→ https://github.com/donatastranauskis/dbeta-bones
+It converts eligible published records and relationships into governed machine-readable output, initially including JSON-LD.
 
----
+AIDI is designed to provide:
 
-## Core Components
+- stable public entity identifiers
+- traceable provenance
+- controlled semantic mappings
+- output validation
+- synchronisation with publishing state
+- drift detection and reconciliation
+- automatic withdrawal of outdated output
 
-The DBETA system is built from four core layers:
+AIDI does not invent business facts. It derives machine-readable claims from governed source records.
 
-- **AIDI Layer**  
-  Structured outputs that expose services, content, and relationships in machine-readable formats  
+### Audit and Compliance
 
-- **Entity Models**  
-  Standardised definitions for services, articles, and digital entities  
+Bones is designed so important actions and outputs can be inspected and verified.
 
-- **Validation Systems**  
-  Rules and checks to ensure consistency, completeness, and integrity  
+This includes:
 
-- **Digital Architecture**  
-  System-level structure connecting all components into a scalable framework  
+- actor and action history
+- authorisation evidence
+- publishing history
+- output provenance
+- automated policy checks
+- release and compatibility controls
 
----
+### Modules and Extensions
 
+Bones follows a modular-monolith architecture.
 
-## Explore the Ecosystem
+Modules can extend the platform through governed contracts while keeping core data ownership, permissions, publishing and machine-readable truth inside defined platform boundaries.
 
-- DBETA Bones (Framework)  
-  https://github.com/donatastranauskis/dbeta-bones
+### Data Ownership and Portability
 
-- DBETA Labs  
-  https://github.com/dbetalimited/dbeta-labs  
+The architecture includes governed export so organisations can retrieve their records, relationships and related platform data without depending on undocumented internal structures.
 
-- AIDI Specification  
-  https://github.com/dbetalimited/dbeta-aidi-spec  
+## Example Journey
 
-- Machine Legibility Examples  
-  https://github.com/dbetalimited/dbeta-machine-legibility-examples  
+A complete Bones workflow is intended to let an administrator:
 
-- Entity Model Examples  
-  https://github.com/dbetalimited/dbeta-entity-model-examples  
+1. Create an entity type called `Project`.
+2. Add fields such as title, completion date and status.
+3. Relate each Project to a Client and Sector.
+4. Create and edit Project records through generated forms.
+5. Submit a record for review.
+6. Publish the approved revision.
+7. Render it through a custom website design.
+8. Generate synchronised JSON-LD automatically.
+9. Trace every published and machine-readable claim back to its source.
+10. Unpublish the record and automatically withdraw its public outputs.
 
-- Structured Output Validator  
-  https://github.com/dbetalimited/dbeta-structured-output-validator  
+The goal is to deliver this without building a separate custom feature for every new business object.
 
-- Public Roadmap  
-  https://github.com/dbetalimited/dbeta-public-roadmap  
+## Architecture
 
----
+Bones 9 is being developed as a governed Laravel modular monolith.
 
-## Example Structured Output
+Its architecture follows twelve connected areas:
+
+1. Platform Foundation
+2. Kernel and Contracts
+3. Data Model
+4. Record Engine
+5. Publishing and Workflow
+6. Modules and Extensions
+7. Admin Product UX
+8. Presentation and Delivery
+9. AIDI and Machine Legibility
+10. Infrastructure and Reliability
+11. Governance, Security and Quality
+12. Distribution and Operations
+
+Security, accessibility, testing, observability and compatibility apply across the entire platform.
+
+## Example Machine-Readable Output
+
+The exact output is generated from governed records and versioned semantic mappings. A simplified example is:
 
 ```json
 {
-  "type": "service",
-  "id": "machine-legibility-aidi-layer",
-  "name": "Machine Legibility (AIDI Layer)",
-  "category": "ai-ready-infrastructure",
-  "related": ["structural-strategy"],
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.dbeta.co.uk/id/service/machine-legibility",
+  "name": "Machine Legibility",
   "url": "https://www.dbeta.co.uk/machine-legibility-aidi-layer.html"
 }
-```  
+```
 
-## Live System
+This output is a derived representation of the published record—not a separate hand-maintained source of truth.
 
-https://www.dbeta.co.uk/aidi/router.php?endpoint=index
+## Current Status
 
----
+Bones 9 is under active development.
 
-## Philosophy
+The architecture and acceptance criteria describe the intended product. Individual capabilities are being implemented and verified through controlled development slices. Documentation should therefore distinguish between:
 
-Modern websites are no longer just interfaces.
+- specified architecture
+- approved implementation work
+- completed and tested functionality
+- future roadmap capabilities
 
-They are systems that must be:
+The repository should not be interpreted as evidence that every capability described above is already available in a production release.
 
-- structured  
-- machine-readable  
-- scalable  
-- governed  
-- verifiable  
+## Principles
 
-DBETA is built to support this shift.
+Bones is guided by several core principles:
 
----
+- business data comes before pages
+- users can define their own business objects
+- one governed source can serve multiple outputs
+- publishing is explicit and revision-aware
+- machine-readable claims must be traceable
+- presentation does not own business truth
+- modules cannot bypass platform governance
+- important behaviour must be testable and auditable
+- organisations must retain control of their data
 
-## Learn More
+## DBETA
 
-- Digital Architecture Approach  
-  https://www.dbeta.co.uk/structural-strategy.html
+DBETA designs and develops structured digital platforms for organisations that need long-term control, scalability and machine legibility.
 
-- Framework Implementation
-  https://www.dbeta.co.uk/digital-platform-engineering.html
+- [DBETA website](https://www.dbeta.co.uk/)
+- [Digital architecture approach](https://www.dbeta.co.uk/structural-strategy.html)
+- [Digital platform engineering](https://www.dbeta.co.uk/digital-platform-engineering.html)
+- [Machine Legibility and AIDI](https://www.dbeta.co.uk/machine-legibility-aidi-layer.html)
+- [DBETA Bones repository](https://github.com/donatastranauskis/dbeta-bones)
 
-- Machine Legibility Layer  
-  https://www.dbeta.co.uk/machine-legibility-aidi-layer.html
+## Licence and Availability
 
-Work With Us
-We implement DBETA systems for businesses looking to build long-term digital infrastructure.
+Bones is proprietary DBETA technology.
 
-https://www.dbeta.co.uk/
+Public repositories, examples or technical materials do not grant rights to use, reproduce or distribute the complete Bones platform unless an accompanying licence explicitly provides those rights.
+
+For commercial enquiries, visit [dbeta.co.uk](https://www.dbeta.co.uk/).
